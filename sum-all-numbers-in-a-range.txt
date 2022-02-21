@@ -1,0 +1,10 @@
+function sumAll(arr) {
+const lowest = Math.min(...arr)
+const highest = Math.max(...arr)
+let sum = 0
+for (let i=highest; i >= lowest; i--){
+  sum += i;
+} return sum
+  
+}
+console.log(sumAll([1,4]))
