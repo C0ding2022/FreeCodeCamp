@@ -1,0 +1,12 @@
+function destroyer(arr,...arg) {
+const indepVar = [...arg];
+const answer = []
+for (let i = 0; i<arr.length;i++){
+  if(indepVar.indexOf(arr[i]) === -1){
+    answer.push(arr[i])
+  }
+}
+return answer
+}
+
+console.log(destroyer([1, 2, 3, 1, 2, 3], 2, 3));
