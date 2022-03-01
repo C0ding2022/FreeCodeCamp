@@ -1,0 +1,59 @@
+function convertToRoman(num) {
+  let keyNumsArr = [1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1];
+let conversionArr =[]
+
+for(let i = 0; i < keyNumsArr.length; i++){
+  while(num >= keyNumsArr[i]){
+    conversionArr.push(keyNumsArr[i]);
+    num-=keyNumsArr[i]
+  }
+}
+
+let romanNumerals= []
+for(let i = 0; i < conversionArr.length; i++){
+  switch(conversionArr[i]){
+    case 1000:
+      romanNumerals.push("M")
+      break;
+    case 900:
+      romanNumerals.push("CM")
+      break;
+    case 500:
+      romanNumerals.push("D")
+      break;
+    case 400:
+      romanNumerals.push("CD")
+      break;
+    case 100:
+      romanNumerals.push("C")
+      break;
+    case 90:
+      romanNumerals.push("XC")
+      break;
+    case 50:
+      romanNumerals.push("L")
+      break;
+    case 40:
+      romanNumerals.push("XL")
+      break;
+    case 10:
+      romanNumerals.push("X")
+      break;
+    case 9:
+      romanNumerals.push("IX")
+      break;
+    case 5:
+      romanNumerals.push("V")
+      break;
+    case 4:
+      romanNumerals.push("IV")
+      break;
+    case 1:
+      romanNumerals.push("I")
+      break;
+  }
+} return romanNumerals.join("");
+ 
+}
+
+console.log(convertToRoman(36));
