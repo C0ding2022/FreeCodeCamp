@@ -1,0 +1,100 @@
+function rot13(str) {
+ let strArr = str.split("")
+ let decode = []
+ console.log(strArr)
+for(let i = 0; i < strArr.length; i++){
+ switch(strArr[i]){
+   case "N":
+       decode.push("A");
+       break;
+  case "O":
+       decode.push("B");
+       break;
+  case "P":
+       decode.push("C");
+       break;
+  case "Q":
+       decode.push("D");
+       break;
+  case "R":
+       decode.push("E");
+       break;
+  case "S":
+       decode.push("F");
+       break;
+  case "T":
+       decode.push("G");
+       break;
+  case "U":
+       decode.push("H");
+       break;
+  case "V":
+       decode.push("I");
+       break;
+  case "W":
+       decode.push("J");
+       break;
+  case "X":
+       decode.push("K");
+       break;
+  case "Y":
+       decode.push("L");
+       break;
+  case "Z":
+       decode.push("M");
+       break;
+  case "A":
+       decode.push("N");
+       break;
+  case "B":
+       decode.push("O");
+       break;
+  case "C":
+       decode.push("P");
+       break;
+  case "D":
+       decode.push("Q");
+       break;
+  case "E":
+       decode.push("R");
+       break;
+  case "F":
+       decode.push("S");
+       break;
+  case "G":
+       decode.push("T");
+       break;
+  case "H":
+       decode.push("U");
+       break;
+  case "I":
+       decode.push("V");
+       break;
+  case "J":
+       decode.push("W");
+       break;
+  case "K":
+       decode.push("X");
+       break;
+  case "L":
+       decode.push("Y");
+       break;
+  case "M":
+       decode.push("Z");
+       break;
+    case " ":
+       decode.push(" ");
+       break;
+    case "!":
+       decode.push("!");
+       break;
+    case "?":
+       decode.push("?");
+       break;
+    case ".":
+       decode.push(".");
+       break;
+ }
+ } return decode.join("") 
+}
+console.log(rot13("SERR PBQR PNZC"));
